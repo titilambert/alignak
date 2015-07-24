@@ -96,6 +96,7 @@ class Trigger(Item):
         """
         self.code_bin = compile(self.code_src, "<irc>", "exec")
 
+    @staticmethod
     def eval(myself, ctx):
         """Execute the trigger
 
